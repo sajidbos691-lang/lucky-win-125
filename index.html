@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10152c">
+<title>Lucky Win 125 | Free Spin & Brain Games</title>
+<meta name="description" content="Enjoy free spin games, daily quizzes and brain challenges in English, Arabic and Urdu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sajidbos691-lang.github.io/lucky-win-125/">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#10152c;color:white;font-family:Arial,sans-serif}
+header,footer{text-align:center;padding:20px;background:#182342}
+.logo{font-size:27px;font-weight:bold;color:#ffd34e}
+nav{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:15px}
+a{color:#ffd34e;text-decoration:none}
+main{max-width:850px;margin:auto;padding:20px}
+section{background:#1c2949;padding:20px;border-radius:16px;margin:18px 0}
+h1,h2{color:#ffd34e}
+.center{text-align:center}
+.wheel{width:min(80vw,330px);margin:20px auto;display:block}
+button,select{padding:13px;border:0;border-radius:10px;font-size:16px}
+button{background:#ffd34e;color:#10152c;font-weight:bold;cursor:pointer}
+#result{font-size:22px;color:#ffd34e;min-height:35px}
+.small{font-size:13px;color:#bdc9e4;line-height:1.7}
+canvas{width:100%;height:auto}
+.quiz{line-height:1.8}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">LUCKY WIN 125</div>
+<p data-t="tag">Free Games • Daily Quiz • Brain Challenges</p>
+<select id="lang" aria-label="Choose language">
+<option value="en">English</option>
+<option value="ar">العربية</option>
+<option value="ur">اردو</option>
+</select>
+<nav>
+<a href="#spin" data-t="navspin">Spin</a>
+<a href="#quiz" data-t="navquiz">Daily Quiz</a>
+<a href="#about" data-t="navabout">About</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section class="center" id="spin">
+<h1 data-t="welcome">Welcome to Lucky Win 125!</h1>
+<p data-t="intro">Enjoy our free entertainment games.</p>
+<div class="wheel">
+<canvas id="wheel" width="600" height="600"></canvas>
+</div>
+<button id="spinBtn" data-t="spin">SPIN NOW</button>
+<p id="result" aria-live="polite"></p>
+<h2><span data-t="points">Your Demo Points:</span>
+<span id="points">0</span></h2>
+<p class="small" data-t="notice">
+Demo points only. They have no cash value.
+No cash prizes or withdrawals are offered.
+</p>
+</section>
+
+<section id="quiz">
+<h2 data-t="quiztitle">Daily Knowledge Quiz</h2>
+<div class="quiz">
+<p data-t="q1">1. Which planet is known as the Red Planet?</p>
+<p data-t="a1">Answer: Mars.</p>
+<p data-t="q2">2. How many sides does a hexagon have?</p>
+<p data-t="a2">Answer: Six.</p>
+<p data-t="q3">3. Who built the pyramids of Giza?</p>
+<p data-t="a3">Answer: Ancient Egyptians.</p>
+</div>
+</section>
+
+<section id="about">
+<h2 data-t="abouttitle">About Lucky Win 125</h2>
+<p data-t="abouttext">We provide free online entertainment, quizzes and educational games for visitors worldwide.</p>
+</section>
+
+<section>
+<h2 data-t="adtitle">Advertising</h2>
+<p class="small" data-t="adtext">
+Advertising may appear here after approval from an advertising network.
+Ads are never required to play games.
+</p>
+</section>
+</main>
+<footer>
+<p>© 2026 Lucky Win 125</p>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms</a> |
+<a href="contact.html">Contact</a>
+</footer>
+<script>
+const translations={
+en:{
+tag:"Free Games • Daily Quiz • Brain Challenges",
+navspin:"Spin",navquiz:"Daily Quiz",navabout:"About",
+welcome:"Welcome to Lucky Win 125!",
+intro:"Enjoy our free entertainment games.",
+spin:"SPIN NOW",points:"Your Demo Points:",
+notice:"Demo points only. They have no cash value. No cash prizes or withdrawals are offered.",
+quiztitle:"Daily Knowledge Quiz",
+q1:"1. Which planet is known as the Red Planet?",
+a1:"Answer: Mars.",
+q2:"2. How many sides does a hexagon have?",
+a2:"Answer: Six.",
+q3:"3. Who built the pyramids of Giza?",
+a3:"Answer: Ancient Egyptians.",
+abouttitle:"About Lucky Win 125",
+abouttext:"We provide free online entertainment, quizzes and educational games for visitors worldwide.",
+adtitle:"Advertising",adtext:"Advertising may appear here after approval from an advertising network. Ads are never required to play games."
+},
+ar:{
+tag:"ألعاب مجانية • اختبار يومي • تحديات ذهنية",
+navspin:"العجلة",navquiz:"اختبار يومي",navabout:"من نحن",
+welcome:"مرحباً بك في Lucky Win 125!",
+intro:"استمتع بألعابنا الترفيهية المجانية.",
+spin:"ابدأ الدوران",points:"نقاط تجريبية:",
+notice:"هذه نقاط تجريبية فقط وليس لها قيمة نقدية. لا توجد جوائز نقدية أو عمليات سحب.",
+quiztitle:"اختبار المعرفة اليومي",
+q1:"1. ما الكوكب المعروف بالكوكب الأحمر؟",
+a1:"الإجابة: المريخ.",
+q2:"2. كم ضلعاً للسداسي؟",
+a2:"الإجابة: ستة.",
+q3:"3. من بنى أهرامات الجيزة؟",
+a3:"الإجابة: المصريون القدماء.",
+abouttitle:"عن Lucky Win 125",
+abouttext:"نقدم الترفيه المجاني والاختبارات والألعاب التعليمية للزوار حول العالم.",
+adtitle:"الإعلانات",adtext:"قد تظهر الإعلانات هنا بعد موافقة شبكة إعلانية. لا يلزم مشاهدة الإعلانات للعب."
+},
+ur:{
+tag:"مفت گیمز • روزانہ کوئز • ذہنی کھیل",
+navspin:"اسپن",navquiz:"روزانہ کوئز",navabout:"ہمارے بارے میں",
+welcome:"Lucky Win 125 میں خوش آمدید!",
+intro:"مفت تفریحی گیمز سے لطف اٹھائیں۔",
+spin:"اب گھمائیں",points:"آپ کے ڈیمو پوائنٹس:",
+notice:"یہ صرف ڈیمو پوائنٹس ہیں، ان کی کوئی نقد قیمت نہیں۔ کوئی نقد انعام یا رقم نکلوانے کی سہولت نہیں۔",
+quiztitle:"روزانہ معلوماتی کوئز",
+q1:"1. سرخ سیارے کے نام سے کون سا سیارہ مشہور ہے؟",
+a1:"جواب: مریخ۔",
+q2:"2. مسدس کے کتنے اطراف ہوتے ہیں؟",
+a2:"جواب: چھ۔",
+q3:"3. جیزہ کے اہرام کس نے بنائے؟",
+a3:"جواب: قدیم مصریوں نے۔",
+abouttitle:"Lucky Win 125 کے بارے میں",
+abouttext:"ہم دنیا بھر کے صارفین کے لیے مفت تفریح، کوئز اور تعلیمی گیمز فراہم کرتے ہیں۔",
+adtitle:"اشتہارات",adtext:"اشتہاری نیٹ ورک کی منظوری کے بعد یہاں اشتہارات دکھائے جا سکتے ہیں۔ گیم کھیلنے کے لیے اشتہار دیکھنا ضروری نہیں۔"
+}
+};
+const lang=document.getElementById("lang");
+function setLang(code){
+ document.documentElement.lang=code;
+ document.documentElement.dir=code==="ar"||code==="ur"?"rtl":"ltr";
+ document.querySelectorAll("[data-t]").forEach(el=>{
+  const key=el.dataset.t;
+  if(translations[code][key])el.textContent=translations[code][key];
+ });
+ lang.value=code;
+}
+lang.addEventListener("change",()=>setLang(lang.value));
+
+const prizes=[
+ {name:"+5",value:5,color:"#e94d73"},
+ {name:"0",value:0,color:"#315fbd"},
+ {name:"+10",value:10,color:"#e8a52b"},
+ {name:"0",value:0,color:"#774ac8"},
+ {name:"+2",value:2,color:"#249c87"},
+ {name:"0",value:0,color:"#c44c4c"},
+ {name:"+15",value:15,color:"#407fc4"},
+ {name:"0",value:0,color:"#a05aab"}
+];
+const canvas=document.getElementById("wheel");
+const ctx=canvas.getContext("2d");
+let rotation=0,playing=false;
+let points=Number(localStorage.getItem("luckyDemoPoints")||0);
+document.getElementById("points").textContent=points;
+function draw(){
+ const arc=Math.PI*2/prizes.length;
+ ctx.clearRect(0,0,600,600);
+ prizes.forEach((p,i)=>{
+  const start=rotation+i*arc;
+  ctx.beginPath();ctx.moveTo(300,300);
+  ctx.arc(300,300,280,start,start+arc);
+  ctx.fillStyle=p.color;ctx.fill();
+  ctx.strokeStyle="white";ctx.lineWidth=4;ctx.stroke();
+  ctx.save();ctx.translate(300,300);
+  ctx.rotate(start+arc/2);
+  ctx.fillStyle="white";ctx.font="bold 30px Arial";
+  ctx.textAlign="right";ctx.fillText(p.name,245,10);
+  ctx.restore();
+ });
+ ctx.beginPath();ctx.arc(300,300,60,0,Math.PI*2);
+ ctx.fillStyle="#ffd34e";ctx.fill();
+ ctx.fillStyle="#10152c";ctx.font="bold 24px Arial";
+ ctx.textAlign="center";ctx.fillText("LUCKY",300,309);
+}
+draw();
+document.getElementById("spinBtn").onclick=()=>{
+ if(playing)return;
+ playing=true;
+ document.getElementById("spinBtn").disabled=true;
+ const chosen=Math.floor(Math.random()*prizes.length);
+ const arc=2*Math.PI/prizes.length;
+ const desired=(1.5*Math.PI-chosen*arc-arc/2+2*Math.PI)%(2*Math.PI);
+ const target=((desired-(rotation%(2*Math.PI))+2*Math.PI)%(2*Math.PI))+12*Math.PI;
+ const start=rotation,finish=start+target,began=performance.now();
+ function animate(now){
+  const t=Math.min((now-began)/4200,1);
+  rotation=start+(finish-start)*(1-Math.pow(1-t,4));
+  draw();
+  if(t<1){requestAnimationFrame(animate);return;}
+  points+=prizes[chosen].value;
+  localStorage.setItem("luckyDemoPoints",points);
+  document.getElementById("points").textContent=points;
+  document.getElementById("result").textContent="Result: "+prizes[chosen].name+" points";
+  playing=false;
+  document.getElementById("spinBtn").disabled=false;
+ }
+ requestAnimationFrame(animate);
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sajidbos691-lang.github.io/lucky-win-125/sitemap.xml
